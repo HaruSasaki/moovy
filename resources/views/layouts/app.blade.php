@@ -57,6 +57,19 @@
             <main>
                 @yield('main')
             </main>
+            <footer>
+                <div class="copyright-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="copyright-text">
+                                    <p>Copyright &copy; 2021 All Rights Reserved</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
