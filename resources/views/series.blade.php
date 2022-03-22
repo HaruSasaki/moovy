@@ -3,8 +3,8 @@
 
 @section('header')
 <li><a href="#">home</a></li>
-<li class="active"><a href="#">movies</a></li>
-<li><a href="#">series</a></li>
+<li><a href="#">movies</a></li>
+<li class="active"><a href="#">series</a></li>
 <li><a href="#">about us</a></li>
 @endsection
 
@@ -15,7 +15,7 @@
           <div class="row justify-content-center">
               <div class="col-lg-8">
                   <div class="section-title text-center mb-50">
-                      <h2 class="title">Top Rated Movies</h2>
+                      <h2 class="title">Top Rated Series</h2>
                   </div>
               </div>
           </div>
