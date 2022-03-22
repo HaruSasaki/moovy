@@ -19,7 +19,13 @@
                             </div>
                             <div class="header-action d-none d-md-block">
                                 <ul>
-                                    <li class="header-btn"><a href="#" class="btn">Sign In</a></li>
+                                    @if (Route::has('login'))
+                                        @auth
+                                        <li class="header-btn"><a href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();" class="btn">Log Out</a></li>
+                                        @else
+                                        <li class="header-btn"><a href="{{ route('login') }}" class="btn">Log In</a></li>
+                                        @endauth
+                                    @endif
                                 </ul>
                             </div>
                         </nav>
