@@ -18,8 +18,18 @@ Route::get('/', function () {
     return view('dashboard', [
         'navlink' => 'home'
     ]);
-})->name('dashboard');
+});
+Route::get('/login', function () {
+    return view('auth.loginbaru', [
+        'navlink' => 'home'
+    ]);
+});
 
+Route::get('/sign', function () {
+    return view('auth.registerbaru', [
+        'navlink' => 'home'
+    ]);
+});
 Route::get('/movies', function () {
     return view('movies', [
         'navlink' => 'movies'
