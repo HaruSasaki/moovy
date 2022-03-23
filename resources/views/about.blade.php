@@ -1,12 +1,4 @@
 @extends('layouts.app')
-@extends('layouts.navigation')
-
-@section('header')
-    <li><a href="#">home</a></li>
-    <li><a href="#">movies</a></li>
-    <li><a href="#">series</a></li>
-    <li class="active"><a href="#">about us</a></li>
-@endsection
 
 @section('main')
 <div class="blog-details-area blog-bg">

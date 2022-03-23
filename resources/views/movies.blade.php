@@ -1,12 +1,4 @@
 @extends('layouts.app')
-@extends('layouts.navigation')
-
-@section('header')
-<li><a href="#">home</a></li>
-<li class="active"><a href="#">movies</a></li>
-<li><a href="#">series</a></li>
-<li><a href="#">about us</a></li>
-@endsection
 
 @section('main')
 <!-- top-rated-movie -->

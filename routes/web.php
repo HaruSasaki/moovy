@@ -13,12 +13,33 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard', [
+        'navlink' => 'home'
+    ]);
+})->name('dashboard');
+
+Route::get('/movies', function () {
+    return view('movies', [
+        'navlink' => 'movies'
+    ]);
+});
+Route::get('/about', function () {
+    return view('about', [
+        'navlink' => 'about'
+    ]);
+});
+Route::get('/series', function () {
+    return view('series', [
+        'navlink' => 'series'
+    ]);
+});
+Route::get('/detail', function () {
+    return view('detail', [
+        'navlink' => 'detail'
+    ]);
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
