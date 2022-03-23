@@ -30,6 +30,6 @@ Route::get('/add', [MovieController::class, 'create'])->middleware('auth');
 Route::post('/add', [MovieController::class, 'store'])->middleware('auth');
 Route::get('/edit/{id}', [MovieController::class, 'edit'])->middleware('auth');
 Route::put('/edit/{id}', [MovieController::class, 'update'])->middleware('auth');
-Route::delete('/detail/{id}', [MovieController::class, 'destroy'])->middleware('auths');
+Route::delete('/detail/{id}', [MovieController::class, 'destroy'])->middleware('auth');
 
 require __DIR__ . '/auth.php';

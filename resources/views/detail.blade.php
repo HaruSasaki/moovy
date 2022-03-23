@@ -28,6 +28,8 @@
                 </div>
                 <div class="movie-details-content">
                     <h2><span>{{ $movie->title}}</span></h2>
+                    <div class="col bg-dark">
+                        <br>
                     <div class="banner-meta">
                         <ul>
                             <li class="quality">
@@ -45,6 +47,7 @@
                         <li>Directed by {{ $movie->director}}</li>
                     </ul><br>
                     <p>{{ $movie->synopsis}}</p><br>
+                </div>
                 </div>
             </div>
         </div>
