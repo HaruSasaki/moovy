@@ -227,6 +227,10 @@ label {
 .movie-item-two .movie-content .title a:hover,
 .movie-content-bottom ul li.tag a:hover,
 .breadcrumb-content .breadcrumb li a,
+.row > .col > .title > a.active,
+.row > .col > .title > a:hover,
+a:hover,
+a,
 .breadcrumb-content .title > span {
 	color: #e4d804;
 }
@@ -2547,6 +2551,15 @@ label {
     flex: 0 0 130px;
 }
 .post-avatar-img img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+.header-avatar-img {
+    margin-right: 30px;
+    width: 48px;
+    flex: 0 0 130px;
+}
+.header-avatar-img img {
     max-width: 100%;
     border-radius: 50%;
 }

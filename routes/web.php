@@ -51,5 +51,7 @@ Route::get('/detail', function () {
     ]);
 });
 
+Route::get('/add', [MovieController::class, 'create']);
+Route::post('/add', [MovieController::class, 'store']);
 
 require __DIR__ . '/auth.php';

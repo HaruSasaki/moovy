@@ -21,18 +21,27 @@
                                 </ul>
                             </div>
                             <div class="header-action d-none d-md-block">
-                                <ul>
-                                    @if (Route::has('login'))
-                                        @auth
-                                        <li class="header-btn"><a href="{{ route('logout') }}"  onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="btn">Log Out</a></li>
-                                        <form method="POST" id="logout-form" action="{{ route('logout') }}" style="display: none">
-                                            @csrf
-                                        </form>
-                                        @else
-                                        <li class="header-btn"><a href="{{ route('login') }}" class="btn">Log In</a></li>
-                                        @endauth
-                                    @endif
-                                </ul>
+                            <div class="navbar-wrap main-menu d-none d-md-block">
+                                <ul class="navigation">
+                                        <li class="menu-item-has-children"><div class="header-avatar-img">
+                                            <img src="img/blog/post_avatar_img.png" alt="img">
+                                        </div>
+                                            <ul class="submenu">
+                                                <li><a href="add">Add Movies</a></li>
+                                                @if (Route::has('login'))
+                                                    @auth
+                                                    <li><a href="{{ route('logout') }}"  onclick="event.preventDefault();document.getElementById('logout-form').submit();">Log Out</a></li>
+                                                    <form method="POST" id="logout-form" action="{{ route('logout') }}" style="display: none">
+                                                        @csrf
+                                                    </form>
+                                                    @else
+                                                    <li><a href="{{ route('login') }}">Log In</a></li>
+                                                    @endauth
+                                                @endif
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </nav>
                     </div>

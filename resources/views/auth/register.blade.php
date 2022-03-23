@@ -4,10 +4,10 @@
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-xl-6 col-lg-7">
-                <div class="widget-title mb-50">
+                <div class="widget-title mb-50" align="center">
                 <div class="row">
                         <div class="col"><h5 class="title"><a href="/login">Login</a></h5></div>
-                        <div class="col"><h5 class="title"><a href="/register">Register</a></h5></div>
+                        <div class="col"><h5 class="title"><a class="active" href="/register">Register</a></h5></div>
                     </div>
                 </div>
                     <div class="contact-form">
