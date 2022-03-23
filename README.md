@@ -3,7 +3,7 @@
 </p>
 
 ## Our Team
-= Andhika Bayu
+- Andhika Bayu
 - Dio Fathir
 - Gloria Loren
 - Iqbal Abdurrahman
@@ -11,6 +11,6 @@
 
 ## Example
 
-Database = https://github.com/rennyan/moovy/blob/main/db_movies.sql
-email = admin@example.com
-password = admin1234
+- Database = https://github.com/rennyan/moovy/blob/main/db_movies.sql
+- Email = admin@example.com
+- Password = admin1234
