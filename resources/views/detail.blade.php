@@ -16,12 +16,12 @@
                     <table class="table table-borderless">
                         <td style="width: 90%"></td>
                         <td>
-                        <td style="width: 5%"><a href="/edit/{{ $movie->id }}" class="btn btn-sm btn-warning">Edit</a></td>
+                        <td style="width: 5%"><a href="/edit/{{ $movie->id }}" class="btn">Edit</a></td>
                         <td style="width: 5%">
                             <form method="POST" action="{{ url('detail', $movie->id ) }}">
                                 @csrf
                                 @method('DELETE')
-                                <button class="btn btn-sm btn-danger">delete</button>
+                                <button class="btn">delete</button>
                             </form>
                         </td>
                     </table>

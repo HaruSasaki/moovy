@@ -20,13 +20,9 @@ Route::get('/about', function () {
         'navlink' => 'about'
     ]);
 });
-Route::get('/detail', function () {
-    return view('detail', [
-        'navlink' => 'detail'
-    ]);
-});
 
 Route::get('/', [MovieController::class, 'home']);
+Route::get('/profile', [MovieController::class, 'profile']);
 Route::get('/movies', [MovieController::class, 'movies']);
 Route::get('/series', [MovieController::class, 'series']);
 Route::get('/detail/{id}', [MovieController::class, 'show']);

@@ -20,7 +20,7 @@
                                         <input type="password" name="password" placeholder="Password">
                                     </div>
                                     <div class="d-flex justify-content-start">
-                                        <a href="#">Forgot password?</a>
+                                        <a href="{{ route('password.request') }}">Forgot password?</a>
                                     </div>
                                     <div class="d-flex justify-content-end">
                                         <button class="btn" type="submit">login</button>

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Movie;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
@@ -48,10 +50,23 @@ class MovieController extends Controller
     public function series()
     {
         $series = Movie::select('*')->where('type', '=', 'series')->get();
-        return view('movies', [
-            'movies'=>$series,
+        return view('series', [
+            'series'=>$series,
             'navlink'=> 'series'
         ]);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+
+    public function profile()
+    {
+        $user_id = Auth::id();
+        $user= User::select('*')->where('id', '=', $user_id)->get();
+        return view('profile', ['user=>'=>$user]);
     }
 
     /**

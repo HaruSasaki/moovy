@@ -62,16 +62,6 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="ucm-nav-wrap">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="Movies-tab" data-toggle="tab" href="#Movies" role="tab" aria-controls="movies" aria-selected="true">Movies</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="Series-tab" data-toggle="tab" href="#Series" role="tab" aria-controls="Series" aria-selected="false">Series</a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
                 <div class="tab-content" id="myTabContent">

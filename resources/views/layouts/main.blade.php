@@ -70,6 +70,12 @@
         </div>
     </div>
     <main>
+        <div class="col">
+            <table class="table table-borderless">
+                <td style="width: 90%"><a href="/" class="btn"><i class="fa-solid fa-arrow-left"></i> Back to list</a>
+                <td>
+            </table>
+        </div>
         @yield('main')
     </main>
     </div>

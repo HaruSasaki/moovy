@@ -14,7 +14,6 @@
                             </div>
                             <div class="post-avatar-content">
                                 <h5>Andhika Bayu Ramadhany</h5>
-                                <p>Bukan ayang</p>
                             </div>
                         </div>
                         <div class="avatar-post mt-40 mb-80">
@@ -23,7 +22,6 @@
                             </div>
                             <div class="post-avatar-content">
                                 <h5>Dio Fathir Zinedine Khalaf</h5>
-                                <p>Bukan ayang</p>
                             </div>
                         </div>
                         <div class="avatar-post mt-40 mb-80">
@@ -32,7 +30,6 @@
                             </div>
                             <div class="post-avatar-content">
                                 <h5>Gloria Loren Lawuredja</h5>
-                                <p>Bukan ayang</p>
                             </div>
                         </div>
                         <div class="avatar-post mt-40 mb-80">
@@ -41,7 +38,6 @@
                             </div>
                             <div class="post-avatar-content">
                                 <h5>Iqbal Abdurrahman</h5>
-                                <p>Ini adalah saya</p>
                             </div>
                         </div>
                         <div class="avatar-post mt-40 mb-80">
@@ -50,7 +46,6 @@
                             </div>
                             <div class="post-avatar-content">
                             <h5>Silmi Julia Rahmi</h5>
-                            <p>Bukan ayang</p>
                             </div>
                         </div>
                     </div>

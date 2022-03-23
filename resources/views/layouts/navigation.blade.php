@@ -27,9 +27,10 @@
                                             <img src="img/blog/post_avatar_img.png" alt="img">
                                         </div>
                                             <ul class="submenu">
-                                                <li><a href="add">Add Movies</a></li>
                                                 @if (Route::has('login'))
+                                                    <li><a href="profile">Profile</a></li>
                                                     @auth
+                                                    <li><a href="add">Add Movies</a></li>
                                                     <li><a href="{{ route('logout') }}"  onclick="event.preventDefault();document.getElementById('logout-form').submit();">Log Out</a></li>
                                                     <form method="POST" id="logout-form" action="{{ route('logout') }}" style="display: none">
                                                         @csrf

@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="row tr-movie-active">
-            <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two">
+            <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer">
                 @foreach ($movies as $movie)
                 <div class="movie-item mb-60">
                     <div class="movie-poster">

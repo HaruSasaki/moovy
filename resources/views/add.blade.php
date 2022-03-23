@@ -38,7 +38,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <label for="director" id="director">Director</label>
-                                    <input type="text" name="director" placeholder="Series/Movie">
+                                    <input type="text" name="director" placeholder="Input director in here...">
                                 </div>
                                 </div>
                             <div class="row">
@@ -54,7 +54,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <label for="type" id="type">Type</label>
-                                    <input type="text" name="type" placeholder="Series/Movie">
+                                    <input type="text" name="type" placeholder="Series/Movies">
                                 </div>
                             </div>
                             <div class="row">

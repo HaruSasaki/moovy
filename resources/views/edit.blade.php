@@ -35,11 +35,11 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label for="writer" id="writer">riter</label>
-                                    <input type="text" name="writer" placeholder="Input writer in here... values="{{$movies->writer}}"">
+                                    <input type="text" name="writer" placeholder="Input writer in here..." values="{{$movies->writer}}">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="director" id="director">Director</label>
-                                    <input type="text" name="director" placeholder="Series/Movie" values="{{$movies->director}}">
+                                    <input type="text" name="director" placeholder="Input director in here..." values="{{$movies->director}}">
                                 </div>
                                 </div>
                             <div class="row">
@@ -51,9 +51,9 @@
                                 <label for="duration" id="duration">Duration</label>
                                 <input type="number" name="duration" placeholder="Edit duration in here..." values="{{$movies->duration}}">
                             </div>
-                            <div class="col-md-6">
-                                <label for="duration" id="duration">Duration</label>
-                                <input type=number" name="duration" placeholder="Input du values="{{$movies->type}}"ration in here...">
+                            <div class="col-md-12">
+                                <label for="type" id="type">Type</label>
+                                <input type="text" name="type" placeholder="Series/Movies">
                             </div>
                             </div>
                             <div class="row">
@@ -69,7 +69,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <label for="rating" id="rating">Rating</label>
-                                    <input type="number" name="rating" placeholder="Input rating in here... values="{{$movies->genre}}"">
+                                    <input type="number" name="rating" placeholder="Input rating in here..." values="{{$movies->genre}}">
                                 </div>
                                 </div>
                                 <div class="row">
