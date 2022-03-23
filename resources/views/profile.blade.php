@@ -12,12 +12,12 @@
                             <div class="post-avatar-img">
                                 <img src="img/blog/post_avatar_img.png" alt="img">
                             </div>
-                            @foreach ($user as $users)
                             <div class="post-avatar-content">
-                                <h5>{{ $users->name }}</h5>
-                                <p>{{ $users->email }}</p>
-                            </div>
+                            @foreach ($user as $users)
+                                <h5><strong>Name : </strong> {{ $users->name }}</h5>
+                                <p><strong>Email : </strong> {{ $users->email }}</p>
                             @endforeach
+                            </div>
                         </div>
                     </div>
                 </div>

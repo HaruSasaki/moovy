@@ -1,13 +1,4 @@
 @extends('layouts.app')
-@extends('layouts.navigation')
-
-@section('header')
-    <li class="active"><a href="#">home</a></li>
-    <li><a href="#">movies</a></li>
-    <li><a href="#">series</a></li>
-    <li><a href="#">about us</a></li>
-@endsection
-
 @section('main')
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -40,7 +31,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="https://www.youtube.com/watch?v=". {{ $newest->trailer }} " class="banner-btn btn popup-video wow fadeInUp" data-wow-delay=".8s" data-wow-duration="1.8s"><i class="fas fa-play"></i> Watch Trailer</a>
+                            <a href="https://www.youtube.com/watch?v={{ $newest->trailer }}" class="banner-btn btn popup-video wow fadeInUp" data-wow-delay=".8s" data-wow-duration="1.8s"><i class="fas fa-play"></i> Watch Trailer</a>
                         </div>
                     </div>
                 </div>

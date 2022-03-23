@@ -28,8 +28,8 @@
                                         </div>
                                             <ul class="submenu">
                                                 @if (Route::has('login'))
-                                                    <li><a href="profile">Profile</a></li>
                                                     @auth
+                                                    <li><a href="profile">Profile</a></li>
                                                     <li><a href="add">Add Movies</a></li>
                                                     <li><a href="{{ route('logout') }}"  onclick="event.preventDefault();document.getElementById('logout-form').submit();">Log Out</a></li>
                                                     <form method="POST" id="logout-form" action="{{ route('logout') }}" style="display: none">
