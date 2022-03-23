@@ -28,7 +28,7 @@ Route::get('/series', [MovieController::class, 'series']);
 Route::get('/detail/{id}', [MovieController::class, 'show']);
 Route::get('/add', [MovieController::class, 'create'])->middleware('auth');
 Route::post('/add', [MovieController::class, 'store'])->middleware('auth');
-Route::get('/edit/{id}', [MovieController::class, 'edit'])->middlware('auth');
+Route::get('/edit/{id}', [MovieController::class, 'edit'])->middleware('auth');
 Route::put('/edit/{id}', [MovieController::class, 'update'])->middleware('auth');
 Route::delete('/detail/{id}', [MovieController::class, 'destroy'])->middleware('auths');
 
