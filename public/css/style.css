@@ -1834,6 +1834,7 @@ a,
 }
 .movie-details-img img {
     border-radius: 5px;
+    max-width: 303px;
 }
 .movie-details-content {
     margin-left: 23px;

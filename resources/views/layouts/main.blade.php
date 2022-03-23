@@ -70,12 +70,15 @@
         </div>
     </div>
     <main>
-        <div class="col">
-            <table class="table table-borderless">
-                <td style="width: 90%"><a href="/" class="btn"><i class="fa-solid fa-arrow-left"></i> Back to list</a>
-                <td>
-            </table>
+      <div id="sticky-header" class="menu-area transparent-header">
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-12">
+                  <a href="/" class="btn"><i class="fa-solid fa-arrow-left"></i> Back</a>
+                </div>
+            </div>
         </div>
+    </div>
         @yield('main')
     </main>
     </div>
