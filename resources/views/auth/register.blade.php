@@ -26,7 +26,7 @@
                                 <input type="password" name="password_confirmation" placeholder="Confirm Password">
                             </div>
                             <div class="d-flex justify-content-end">
-                                <button class="btn">Submit</button>
+                                <button class="btn">Register</button>
                             </div>
                         </form>
                     </div>
