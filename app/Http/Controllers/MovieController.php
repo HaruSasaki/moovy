@@ -168,6 +168,7 @@ class MovieController extends Controller
             'rated' => 'required',
             'rating' => 'required',
             'cover' => 'required',
+            'banner' => 'required',
             'cover.*' => 'image|mimes:jpeg,png,jpg|max:2048',
             'banner.*' => 'image|mimes:jpeg,png,jpg|max:2048'
         ]);

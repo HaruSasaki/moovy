@@ -11,16 +11,16 @@
                 </div>
             </div>
         </div>
-        <div class="row tr-movie-active">
-            <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two">
+        <div class="row justify-content-start">
                 @foreach ($series as $serie)
+                <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer">
                 <div class="movie-item mb-60">
                     <div class="movie-poster">
-                        <a href="movie-details.html"><img src="{{ asset('/image/cover/'.$serie->cover) }}" alt=""></a>
+                        <a href="/detail/{{ $serie->id }}"><img src="{{ asset('/image/cover/'.$serie->cover) }}" alt=""></a>
                     </div>
                     <div class="movie-content">
                         <div class="top">
-                            <h5 class="title"><a href="#">{{ $serie->title }}</a></h5>
+                            <h5 class="title"><a href="/detail/{{ $serie->id }}">{{ $serie->title }}</a></h5>
                             <span class="date">{{ $serie->year }}</span>
                         </div>
                         <div class="bottom">
@@ -33,6 +33,7 @@
                             </ul>
                         </div>
                     </div>
+                </div>
                 </div>
                 @endforeach
             </div>

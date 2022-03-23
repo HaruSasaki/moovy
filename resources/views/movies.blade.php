@@ -11,9 +11,9 @@
                 </div>
             </div>
         </div>
-        <div class="row tr-movie-active">
-            <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer">
+        <div class="row justify-content-start">
                 @foreach ($movies as $movie)
+                <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer">
                 <div class="movie-item mb-60">
                     <div class="movie-poster">
                         <a href="/detail/{{ $movie->id }}"><img src="{{ asset('/image/cover/'.$movie->cover) }}" alt=""></a>
@@ -34,9 +34,9 @@
                         </div>
                     </div>
                 </div>
+                </div>
                 @endforeach
             </div>
-        </div>
     </div>
 </div>
 <!-- top-rated-movie-end -->
