@@ -11,7 +11,6 @@
 
 ## Example
 
-<a href-"https://github.com/rennyan/moovy/blob/main/db_movies.sql">Example Database</a>
-
-email= admin@example.com
+Database = https://github.com/rennyan/moovy/blob/main/db_movies.sql
+email = admin@example.com
 password = admin1234
