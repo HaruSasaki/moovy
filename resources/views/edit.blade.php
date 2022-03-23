@@ -12,80 +12,74 @@
                     </div>
                 </div>
                     <div class="contact-form">
-                        <form action="{{ url('edit', $movies->id) }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ url('edit', $movie->id) }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
                             <div class="row">
                                 <div class="col-md-12">
                                     <label for="cover" id="cover">Cover</label>
-                                    <input type="file" name="cover" values="{{$movies->cover}}">
+                                    <input type="file" name="cover" value="{{$movie->cover}}">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <label for="banner" id="banner">Banner</label>
-                                    <input type="file" name="banner" values="{{$movies->banner}}">
+                                    <input type="file" name="banner" value="{{$movie->banner}}">
                                 </div>
                             </div>
                             <div class="row">
                             <div class="col-md-12">
                                 <label for="title" id="title">Title</label>
-                                <input type="text" name="title" placeholder="Input title in here... values="{{$movies->title}}"">
+                                <input type="text" name="title" placeholder="Input title in here..." value="{{$movie->title}}">
                             </div></div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="writer" id="writer">riter</label>
-                                    <input type="text" name="writer" placeholder="Input writer in here..." values="{{$movies->writer}}">
+                                    <label for="writer" id="writer">Writer</label>
+                                    <input type="text" name="writer" placeholder="Input writer in here..." value="{{$movie->writer}}">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="director" id="director">Director</label>
-                                    <input type="text" name="director" placeholder="Input director in here..." values="{{$movies->director}}">
+                                    <input type="text" name="director" placeholder="Input director in here..." value="{{$movie->director}}">
                                 </div>
                                 </div>
                             <div class="row">
                             <div class="col-md-6">
                                 <label for="year" id="year">Year</label>
-                                <input type=nnumberr" name="year" placeholder="Input year in here.. values="{{$movies->year}}".">
+                                <input type=nnumberr" name="year" placeholder="Input year in here..." value="{{$movie->year}}">
                             </div>
                             <div class="col-md-6">
                                 <label for="duration" id="duration">Duration</label>
-                                <input type="number" name="duration" placeholder="Edit duration in here..." values="{{$movies->duration}}">
+                                <input type="number" name="duration" placeholder="Input duration in here..." value="{{$movie->duration}}">
                             </div>
                             <div class="col-md-12">
                                 <label for="type" id="type">Type</label>
-                                <input type="text" name="type" placeholder="Series/Movies">
+                                <input type="text" name="type" placeholder="Series/Movies" value="{{ $movie->type }}">
                             </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12">
-                                    <label for="type" id="type">Type</label>
-                                    <input type="text" name="type" placeholder="Series/Movie"> values="{{$movies->title}}"rated
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6"> values="{{$movies->title}}"rating
+                                <div class="col-md-6"> 
                                     <label for="rated" id="rated">Rated</label>
-                                    <input type="text" name="rated" placeholder="Input age rated in here...">
+                                    <input type="text" name="rated" placeholder="Input age rated in here..." value="{{$movie->rated}}">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="rating" id="rating">Rating</label>
-                                    <input type="number" name="rating" placeholder="Input rating in here..." values="{{$movies->genre}}">
+                                    <input type="number" name="rating" placeholder="Input rating in here..." value="{{$movie->rating}}">
                                 </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <label for="genre" id="genre">Genre</label> values="{{$movies->title}}"trailer
-                                        <input type="text" name="genre" placeholder="Input genre in here...">
+                                        <label for="genre" id="genre">Genre</label>
+                                        <input type="text" name="genre" placeholder="Input genre in here..." value="{{$movie->genre}}">
                                     </div></div>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <label for="trailer" id="trailer">Trailer</label> values="{{$movies->titsynopsis
-                                            <input type="text" name="trailer" placeholder="Youtube Vid Id (https://youtu.be/ here ->Pv56oBAfRhY<- here)">
+                                            <label for="trailer" id="trailer">Trailer</label> 
+                                            <input type="text" placeholder="Youtube Vid Id (https://youtu.be/ here ->Pv56oBAfRhY<- here)" name="trailer" value="{{$movie->trailer}}">
                                         </div></div>
                             <div class="row">
                             <div class="col-md-12">
                                 <label for="Synopsis" id="Synopsis">Synopsis</label>
-                                <textarea name="synopsis" placeholder="Input Synopsis in here..."></textarea>
+                                <textarea name="synopsis" placeholder="Input Synopsis in here...">{{ $movie->synopsis }}</textarea>
                             </div></div>
                             <div class="d-flex justify-content-end">
                                 <button class="btn">Submit</button>

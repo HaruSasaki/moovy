@@ -8,7 +8,7 @@
             <div class="col-xl-3 col-lg-4">
                 <div class="movie-details-img">
                     <img src="{{ asset('image/cover/'. $movie->cover )}}" alt="">
-                    <a href="https://www.youtube.com/watch?v=". {{ $movie->trailer }}" class="popup-video"> <img src="{{ asset('img/images/play_icon.png')}}" alt=""></a>
+                    <a href="https://www.youtube.com/watch?v={{ $movie->trailer }}" class="popup-video"> <img src="{{ asset('img/images/play_icon.png')}}" alt=""></a>
                 </div>
             </div>
             <div class="col-xl-6 col-lg-8">

@@ -16,11 +16,11 @@
                 @foreach ($movies as $movie)
                 <div class="movie-item mb-60">
                     <div class="movie-poster">
-                        <a href="movie-details.html"><img src="{{ asset('/image/cover/'.$movie->cover) }}" alt=""></a>
+                        <a href="/detail/{{ $movie->id }}"><img src="{{ asset('/image/cover/'.$movie->cover) }}" alt=""></a>
                     </div>
                     <div class="movie-content">
                         <div class="top">
-                            <h5 class="title"><a href="#">{{ $movie->title }}</a></h5>
+                            <h5 class="title"><a href="detail/{{ $movie->id }}">{{ $movie->title }}</a></h5>
                             <span class="date">{{ $movie->year }}</span>
                         </div>
                         <div class="bottom">
