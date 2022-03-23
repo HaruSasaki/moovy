@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MovieController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,35 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
-    return view('dashboard', [
-        'navlink' => 'home'
-    ]);
-});
-Route::get('/login', function () {
-    return view('auth.loginbaru', [
-        'navlink' => 'home'
-    ]);
-});
-
-Route::get('/sign', function () {
-    return view('auth.registerbaru', [
-        'navlink' => 'home'
-    ]);
-});
-Route::get('/movies', function () {
-    return view('movies', [
-        'navlink' => 'movies'
-    ]);
-});
 Route::get('/about', function () {
     return view('about', [
         'navlink' => 'about'
-    ]);
-});
-Route::get('/series', function () {
-    return view('series', [
-        'navlink' => 'series'
     ]);
 });
 Route::get('/detail', function () {
@@ -51,7 +26,14 @@ Route::get('/detail', function () {
     ]);
 });
 
+Route::get('/', [MovieController::class, 'home']);
+Route::get('/movies', [MovieController::class, 'movies']);
+Route::get('/series', [MovieController::class, 'series']);
+Route::get('/detail/{id}', [MovieController::class, 'show']);
 Route::get('/add', [MovieController::class, 'create']);
 Route::post('/add', [MovieController::class, 'store']);
+Route::get('/edit/{id}', [MovieController::class, 'edit']);
+Route::put('/edit/{id}', [MovieController::class, 'update']);
+Route::delete('/detail/{id}', [MovieController::class, 'destroy']);
 
 require __DIR__ . '/auth.php';
