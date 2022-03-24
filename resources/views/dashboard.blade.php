@@ -95,7 +95,7 @@
                                     <li><span class="quality">{{ $serie->rated }}</span></li>
                                     <li>
                                         <span class="duration"><i class="far fa-clock"></i> {{ $serie->duration }} min</span>
-                                        <span class="rating"><i class="fas fa-thumbs-up"></i> {{ $serie->rating }}</span>
+                                        <span class="rating"><i class="fas fa-star"></i> {{ $serie->rating }}</span>
                                     </li>
                                 </ul>
                             </div>
@@ -121,7 +121,7 @@
                                     <li><span class="quality">{{ $movie->rated }}</span></li>
                                     <li>
                                         <span class="duration"><i class="far fa-clock"></i> {{ $movie->duration }} min</span>
-                                        <span class="rating"><i class="fas fa-thumbs-up"></i> {{ $movie->rating }}</span>
+                                        <span class="rating"><i class="fas fa-star"></i> {{ $movie->rating }}</span>
                                     </li>
                                 </ul>
                             </div>

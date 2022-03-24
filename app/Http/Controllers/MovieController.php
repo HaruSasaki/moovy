@@ -167,17 +167,27 @@ class MovieController extends Controller
             'synopsis' => 'required',
             'rated' => 'required',
             'rating' => 'required',
-            'cover' => 'required',
-            'banner' => 'required',
             'cover.*' => 'image|mimes:jpeg,png,jpg|max:2048',
             'banner.*' => 'image|mimes:jpeg,png,jpg|max:2048'
         ]);
-        $coverName = time() . '.' . $request->cover->extension();
-        $request->cover->move(public_path() . '/image/cover/', $coverName);
-        $bannerName = time() . '.' . $request->banner->extension();
-        $request->banner->move(public_path() . '/image/banner/', $bannerName);
 
-        $movie = Movie::find($id)->update([
+        $movie = Movie::find($id);
+
+        if ($request->cover){
+            $coverName = time() . '.' . $request->cover->extension();
+            $request->cover->move(public_path() . '/image/cover/', $coverName);
+        } else {
+            $coverName = $movie->cover;
+        }
+
+        if ($request->banner){
+            $bannerName = time() . '.' . $request->banner->extension();
+            $request->banner->move(public_path() . '/image/banner/', $bannerName);
+        } else {
+            $bannerName = $movie->banner;
+        }
+
+        $movie = $movie->update([
             'title' => $request['title'],
             'type' => $request['type'],
             'year' => $request['year'],
