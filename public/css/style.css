@@ -2722,6 +2722,7 @@ a,
     border: 1px solid #232226;
 }
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
     width: 100%;
     border: 1px solid #1f1e24;
@@ -2735,6 +2736,7 @@ a,
     transition: .3s linear;
 }
 .contact-form input::placeholder,
+.contact-form select::placeholder,
 .contact-form textarea::placeholder {
     color: #bcbcbc;
     font-weight: 500;
@@ -2743,6 +2745,7 @@ a,
     min-height: 155px;
 }
 .contact-form input:focus,
+.contact-form select:focus,
 .contact-form textarea:focus {
     border-color: #e4d804;
 }

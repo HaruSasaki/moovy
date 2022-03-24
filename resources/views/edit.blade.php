@@ -53,7 +53,10 @@
                             </div>
                             <div class="col-md-12">
                                 <label for="type" id="type">Type</label>
-                                <input type="text" name="type" placeholder="Series/Movies" value="{{ $movie->type }}">
+                                    <select name="type" id="type">
+                                        <option {{ old('type',$movie->type=='Series' ? 'selected' : '')}} value="Series">Series</option>
+                                        <option {{ old('type',$movie->type=='Movies' ? 'selected' : '')}} value="Movies">Movies</option>
+                                    </select>
                             </div>
                             </div>
                             <div class="row">

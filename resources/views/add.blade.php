@@ -54,7 +54,10 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <label for="type" id="type">Type</label>
-                                    <input type="text" name="type" placeholder="Series/Movies">
+                                    <select name="type" id="type">
+                                        <option value="Series">Series</option>
+                                        <option value="Movies">Movie</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="row">
