@@ -14,15 +14,9 @@ use App\Http\Controllers\MovieController;
 |
 */
 
-
-Route::get('/about', function () {
-    return view('about', [
-        'navlink' => 'about'
-    ]);
-});
-
 Route::get('/', [MovieController::class, 'home']);
 Route::get('/profile', [MovieController::class, 'profile'])->middleware('auth');
+Route::get('about', [MovieController::class, 'about']);
 Route::get('/movies', [MovieController::class, 'movies']);
 Route::get('/series', [MovieController::class, 'series']);
 Route::get('/detail/{id}', [MovieController::class, 'show']);

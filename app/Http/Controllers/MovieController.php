@@ -69,6 +69,10 @@ class MovieController extends Controller
         return view('profile', ['user' => $user]);
     }
 
+    public function about(){
+        return view('about', ['navlink' => 'about']);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
